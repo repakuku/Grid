@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HorizontalGridView: View {
-    private let dataSet = (1...10)
+    private let dataSet = (1...50)
     private let rows = [ GridItem() ]
     
     var body: some View {

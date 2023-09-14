@@ -48,7 +48,9 @@ struct CustomGridView<Content: View, T>: View {
 struct CustomGreadView_Previews: PreviewProvider {
     static var previews: some View {
         CustomGridView(items: [0, 1, 2, 3, 4, 5, 6], columns: 3) { item in
-            Text(item.formatted())
+            Image(systemName: item.formatted() + ".circle")
+                .resizable()
+                .frame(width: 50, height: 50)
         }
     }
 }
