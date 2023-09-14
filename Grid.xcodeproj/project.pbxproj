@@ -12,6 +12,7 @@
 		07F61EEA2AB3B401003081D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F61EE92AB3B401003081D5 /* Assets.xcassets */; };
 		07F61EED2AB3B401003081D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F61EEC2AB3B401003081D5 /* Preview Assets.xcassets */; };
 		07F61EF42AB3B41F003081D5 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61EF32AB3B41F003081D5 /* CustomGridView.swift */; };
+		07F61EF62AB3C64F003081D5 /* VerticalGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F61EF52AB3C64F003081D5 /* VerticalGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		07F61EE92AB3B401003081D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F61EEC2AB3B401003081D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07F61EF32AB3B41F003081D5 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
+		07F61EF52AB3C64F003081D5 /* VerticalGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				07F61EE52AB3B3FF003081D5 /* GridApp.swift */,
 				07F61EE72AB3B3FF003081D5 /* ContentView.swift */,
 				07F61EF32AB3B41F003081D5 /* CustomGridView.swift */,
+				07F61EF52AB3C64F003081D5 /* VerticalGridView.swift */,
 				07F61EE92AB3B401003081D5 /* Assets.xcassets */,
 				07F61EEB2AB3B401003081D5 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F61EF62AB3C64F003081D5 /* VerticalGridView.swift in Sources */,
 				07F61EF42AB3B41F003081D5 /* CustomGridView.swift in Sources */,
 				07F61EE82AB3B3FF003081D5 /* ContentView.swift in Sources */,
 				07F61EE62AB3B3FF003081D5 /* GridApp.swift in Sources */,
