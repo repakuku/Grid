@@ -17,15 +17,20 @@ struct CustomGridView<Content: View, T>: View {
     }
     
     var body: some View {
-        ScrollView {
-            VStack {
-                ForEach(0...rows, id: \.self) { rowIndex in
-                    HStack {
-                        ForEach(0..<columns, id: \.self) { columnIndex in
-                            if let index = getIndexFor(row: rowIndex, column: columnIndex) {
-                                content(items[index])
-                            } else {
-                                Text("  ")
+        GeometryReader { geometry in
+            let sideLength = geometry.size.width / CGFloat(columns)
+            
+            ScrollView {
+                VStack {
+                    ForEach(0...rows, id: \.self) { rowIndex in
+                        HStack {
+                            ForEach(0..<columns, id: \.self) { columnIndex in
+                                if let index = getIndexFor(row: rowIndex, column: columnIndex) {
+                                    content(items[index])
+                                        .frame(width: sideLength, height: sideLength)
+                                } else {
+                                    Spacer()
+                                }
                             }
                         }
                     }
